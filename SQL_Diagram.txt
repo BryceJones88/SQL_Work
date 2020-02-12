@@ -1,0 +1,46 @@
+Dept_Emp
+-
+Emp_No int PK 
+Dept_No int PK
+From_Date VARCHAR(30) 
+To_Date VARCHAR(30)
+
+Departments
+-
+Dept_No INTEGER FK >- Dept_Emp
+Dept_Name VARCHAR(30) PK
+
+Dept_Manager
+-
+Dept_No INTEGER FK >- Dept_Emp
+Emp_No INTEGER FK >- Employees
+From_Date VARCHAR(30)
+To_Date VARCHAR(30)
+
+Employees
+-
+Emp_No INTEGER FK >- Titles
+Birth_Date VARCHAR(30)
+First_Name VARCHAR(30)
+Last_Name VARCHAR(30)
+Gender VARCHAR(30) PK
+Hire_Date VARCHAR(30)
+
+Titles
+-
+Emp_No INTEGER FK >- Salaries 
+Title VARCHAR(30) 
+From_Date VARCHAR(30) 
+To_Date VARCHAR(30) 
+
+Salaries
+- 
+Emp_No INTEGER
+Salary INTEGER PK
+From_Date VARCHAR(30)
+To_Date VARCHAR(30)
+
+
+
+
+
